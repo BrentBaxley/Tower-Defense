@@ -167,7 +167,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3894309966895674023}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
   m_Name: 
@@ -264,6 +264,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9be6ebd9c3881714aa126d6d4cb401ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultColor: {r: 0, g: 0, b: 0, a: 1}
+  blockColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &5305659721217611922
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2438512246449963931}
   - component: {fileID: 2870455986816322551}
+  - component: {fileID: 8084874593812968284}
   m_Layer: 0
   m_Name: Tile
   m_TagString: Untagged
@@ -309,3 +312,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec941e39514cf74181c6c4de2a59f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlaceable: 1
+  towerPrefab: {fileID: 3219458064393657486, guid: 8a965e088bae16643aab3d07ccfd5e2e, type: 3}
+--- !u!65 &8084874593812968284
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5305659721217611922}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: -0.5, z: 0}
