@@ -10,6 +10,7 @@ public class GridManager : MonoBehaviour
     public int UnityGridSize {get { return unityGridSize;}}
     Dictionary<Vector2Int, Node> grid = new Dictionary<Vector2Int, Node>();
     public Dictionary<Vector2Int, Node> Grid {get { return grid;}}
+    
     private void Awake() 
     {
         CreateGrid();    
@@ -46,7 +47,6 @@ public class GridManager : MonoBehaviour
         Vector2Int coordinates = new Vector2Int();
         coordinates.x = Mathf.RoundToInt(position.x / unityGridSize);
         coordinates.y = Mathf.RoundToInt(position.z / unityGridSize);
-
         return coordinates;
     }
 
